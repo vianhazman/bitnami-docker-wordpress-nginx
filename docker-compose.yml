@@ -11,8 +11,8 @@ services:
   wordpress:
     image: 'docker.io/bitnami/wordpress-nginx:5-debian-10'
     ports:
-      - '80:8080'
-      - '443:8443'
+      - '880:8080'
+      - '8443:8443'
     volumes:
       - 'wordpress_data:/bitnami/wordpress'
       - './wordpress-server-block.conf:/opt/bitnami/nginx/conf/server_blocks/wordpress-server-block.conf:ro'
